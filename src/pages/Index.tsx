@@ -141,8 +141,17 @@ export default function Index() {
 
   if (currentView === 'home') {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50">
-        <div className="container mx-auto px-4 py-12">
+      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-64 h-64 opacity-20 pointer-events-none">
+          <img src="https://cdn.poehali.dev/projects/d45d0f03-dac5-4989-8db7-0fa686347e6c/files/358ad48b-eaaa-474e-b09a-1c1218aae354.jpg" alt="" className="w-full h-full object-contain" />
+        </div>
+        <div className="absolute bottom-0 right-0 w-72 h-72 opacity-20 pointer-events-none">
+          <img src="https://cdn.poehali.dev/projects/d45d0f03-dac5-4989-8db7-0fa686347e6c/files/6c21669c-b5d5-43b0-beab-c17abd6e9f99.jpg" alt="" className="w-full h-full object-contain" />
+        </div>
+        <div className="absolute top-0 right-0 w-56 h-56 opacity-15 pointer-events-none">
+          <img src="https://cdn.poehali.dev/projects/d45d0f03-dac5-4989-8db7-0fa686347e6c/files/358ad48b-eaaa-474e-b09a-1c1218aae354.jpg" alt="" className="w-full h-full object-contain transform scale-x-[-1]" />
+        </div>
+        <div className="container mx-auto px-4 py-12 relative z-10">
           <div className="text-center space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
