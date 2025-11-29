@@ -146,7 +146,7 @@ export default function Index() {
           <div className="text-center space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                HobbyMatch
+                Momentum
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Найди своё идеальное хобби и друзей по интересам
